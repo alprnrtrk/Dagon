@@ -51,11 +51,15 @@ const myMenu = new Dagon({
 ### Documentation
 
 - ```type: ('toggle' | 'dropdown')``` - Defines the type of menu (default: 'toggle').
--  prefix: (string) - Prefix used for generating CSS class names (default: 'dagon').
--  trigger: (string) - Class name used for the trigger element (default: 'trigger').
--  target: (string) - Class name used for the target element (default: 'target').
--  seperator: (string) - String used to separate class name parts (default: '-').
--  toggle: (string) - Class name added/removed to show/hide the menu (default: 'active').
--  itSelf: (boolean) - Close the menu on clicking outside the menu itself (default: false).
--  switch: (boolean) - Allow multiple menus to be open at the same time (default: true).
--  elements: (string[] | null) - Array of element IDs or classes you want to control.
+- ```prefix: (string)``` - Prefix used for generating CSS class names (default: 'dagon').
+- ```trigger: (string)``` - Class name used for the trigger element (default: 'trigger').
+- ```target: (string)``` - Class name used for the target element (default: 'target').
+- ```seperator: (string)``` - String used to separate class name parts (default: '-').
+- ```toggle: (string)``` - Class name added/removed to show/hide the menu (default: 'active').
+- ```itSelf: (boolean)``` - Close the menu on clicking outside the menu itself (default: false).
+- ```switch: (boolean)``` - Allow multiple menus to be open at the same time (default: true).
+- ```elements: (string[] | null)``` - Array of element IDs or classes you want to control.
+
+### Contributing
+We welcome contributions to this project. Feel free to fork the repository and submit a pull request with your changes.
+

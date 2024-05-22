@@ -16,6 +16,9 @@ There are two ways to use Dagon.js in your project:
 1.  **Download the Script:**  Download the `dagon.js` file and include it in your HTML using a `<script>` tag.
 2.  **Use a CDN (Coming Soon):** (placeholder text, functionality not currently implemented)
 
+### Live Example
+
+https://alprnrtrk.github.io/Dagon/
 
 ### Usage
 

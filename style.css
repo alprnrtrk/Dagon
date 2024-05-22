@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serifs;
+}
+
+body {
+  width: 100lvw;
+  height: 100lvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #333;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.buttons button {
+  padding: 10px 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid lime;
+  border-radius: 0.2rem;
+  background: transparent;
+  color: lime;
+  transition: 0.45s opacity;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background: lime;
+  color: #333;
+}
+.buttons button.active {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.25);
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.panels div {
+  display: grid;
+  place-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid lightblue;
+  border-radius: 0.2rem;
+  background: transparent;
+  color: lightblue;
+  transition: 0.45s opacity;
+  cursor: pointer;
+}
+.panels div.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: all;
+}
+.panels div:hover {
+  background: lightblue;
+  color: #333;
+}
+.panels div.active {
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.25);
+}/*# sourceMappingURL=style.css.map */

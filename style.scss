@@ -1,0 +1,86 @@
+$gap: 10px;
+$columnTemplate: 3;
+$boxSize: 100px;
+
+$bgColor: #333;
+$buttonColor: lime;
+$panelColor: lightblue;
+
+@mixin appearence($color){
+    padding: 10px 20px;
+    appearance: none;
+    border: 1px solid $color;
+    border-radius: .2rem;
+    background: transparent;
+    color: $color;
+    transition: .45s opacity;
+    cursor: pointer;
+
+    &:hover{
+        background: $color;
+        color: $bgColor;
+    }
+
+    &.active{
+        box-shadow: 0 0 20px transparentize($color, .75);
+    }
+}
+
+@mixin showHide{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+    &.active{
+        position: relative;
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs;
+}
+
+body{
+    width: 100lvw;
+    height: 100lvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+    background-color: $bgColor;
+    font-size: 30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+    
+    button{
+        @include appearence($buttonColor);
+    }
+}
+
+.panels{
+    display: grid;
+    grid-template-columns: repeat($columnTemplate,1fr);
+    gap: $gap;
+
+    div{
+        display: grid;
+        place-content: center;
+        width: $boxSize;
+        height: $boxSize;
+
+        @include showHide();
+        @include appearence($panelColor);
+    }
+}

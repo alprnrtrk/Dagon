@@ -19,6 +19,35 @@ There are two ways to use Dagon.js in your project:
 
 ### Usage
 
+**HTML Example:**
+
+```html
+    <div class="buttons">
+        <button class="dagon-trigger-new">News</button>
+        <button class="dagon-trigger-blog">Blogs</button>
+        <button class="dagon-trigger-other">Others</button>
+    </div>
+
+    <div class="panels">
+        <div class="dagon-target-new">New</div>
+        <div class="dagon-target-new">New</div>
+        <div class="dagon-target-new">New</div>
+        <div class="dagon-target-new">New</div>
+        <div class="dagon-target-blog">Blog</div>
+        <div class="dagon-target-blog">Blog</div>
+        <div class="dagon-target-blog">Blog</div>
+        <div class="dagon-target-blog">Blog</div>
+        <div class="dagon-target-other">Other</div>
+        <div class="dagon-target-other">Other</div>
+        <div class="dagon-target-other">Other</div>
+        <div class="dagon-target-other">Other</div>
+        <div class="dagon-target-other">Other</div>
+        <div class="dagon-target-other">Other</div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+```
+
 **Basic Usage:**
 
 ```javascript
@@ -30,7 +59,7 @@ const myMenu = new Dagon({
 });
 ```
 
-**Basic Usage:**
+**Advanced Usage:**
 
 ```javascript
 import { Dagon } from './dagon.js';

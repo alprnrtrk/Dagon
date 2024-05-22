@@ -50,7 +50,7 @@ const myMenu = new Dagon({
 
 ### Documentation
 
-- type: ('toggle' | 'dropdown') - Defines the type of menu (default: 'toggle').
+- ```type: ('toggle' | 'dropdown')``` - Defines the type of menu (default: 'toggle').
 -  prefix: (string) - Prefix used for generating CSS class names (default: 'dagon').
 -  trigger: (string) - Class name used for the trigger element (default: 'trigger').
 -  target: (string) - Class name used for the target element (default: 'target').
